@@ -1,0 +1,113 @@
+.addWeightScreen{
+    width: 60vw;
+    height: 100vh;
+    border-right: rgba(32, 33, 55, 1) 8px solid;
+    border-left: rgba(32, 33, 55, 1) 8px solid;
+
+}
+.addWeightScreenHeader{
+    display: flex;
+    position: relative;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+.addWeightScreenHeaderText{
+    width: 12vw;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: relative;
+    left: 24vw;
+    text-align: center;
+}
+.closeWeightScreenButton{
+    width: 3vw;
+    position: relative;
+    left: 43vw;
+    background-color: transparent;
+    border: none;
+}
+.closeWeightScreenButton:hover{
+    filter: brightness(50%);
+}
+/* submit button */
+.submitButton{
+    width: 8vw;
+    height: 6.5vh;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(26, 255, 213, 1);
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    left: 46.2vw;
+    bottom: 20px;
+}
+.submitButton:hover{
+    background-color: rgba(26, 255, 213, 1);
+    background-color: rgba(20, 240, 205, 1);
+}
+
+/* calendarSection */
+.calendarSection{
+    width: 23vw;
+    height: 50vh;
+    margin: 0 auto 10vh auto;
+
+    /* temp */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dateInput{
+    width: 10vw;
+    height: 5vh;
+    border: solid 2px #14f0cd;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    outline: none;
+}
+
+/* weightInputSection */
+.weightInputSection{
+    width: calc(60vw - 16px);
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weightInput{
+    width: 10vw;
+    height: 5vh;
+    border: solid 2px #14f0cd;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    outline: none;  /* Prevents the default focus outline */
+}
+.weightInput:focus {
+      border-color: #14f0cd; /* Changes border on focus */
+    }
+
+    .weightInput::-webkit-outer-spin-button,
+    .weightInput::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Remove spinner arrows in Firefox */
+    .weightInput {
+      -moz-appearance: textfield;
+    }

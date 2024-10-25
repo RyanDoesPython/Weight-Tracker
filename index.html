@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Tracker</title>
+    <link href="css\styles.css" rel="stylesheet">
+    <link href="css\graph.css" rel="stylesheet">
+    <link href="css\profileWindow.css" rel="stylesheet">
+    <link href="css\BMI.css" rel="stylesheet">
+    <link href="css\addWeightScreen.css" rel="stylesheet">
+    <link href="css\history.css" rel="stylesheet">
+</head>
+<body>
+    <div class="profileWindow" id="profileWindow">
+        <button id="closeButton" class="closeButton">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26 2L2 26M2 2L26 26" stroke="#1AFFD5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>      
+        </button>
+        <img src="ProfilePicture.jpg" class="profilePicture">
+        <p class="inputHeader">Name</p>
+        <input class="profileInput" id="nameInput">
+        <p class="inputHeader">Height (in inches)</p>
+        <input class="profileInput" id="heightInput">
+        <p class="inputHeader">Goal Weight</p>
+        <input class="profileInput" id="weightGoalInput">
+    </div>
+    <main id="mainSection">
+        <div class="header">
+            <button class="userButton button" id="userButton"><img src="ProfilePicture.jpg" class="userButton"></button>
+            <p class="welcomeBackText" id="welcomeBackText">Welcome Back ___</p>
+        </div>
+        <div class="graph" id="graph">
+    
+        </div>
+        <div class="tweanSection"></div>
+        <div class="scrollSection">
+            <div class="BMIcalculatorContainer" id="BMIcalculatorContainer">
+                <h2 class="subHeading">BMI Calculator</h2>
+                <div class="BMIcalculator" id="BMIcalculator">
+                    <h1 class="BMIHeader">
+                        <span id="BMINumber" class="BMINumber"></span>
+                        <span id="BMIText" class="BMIText"></span>
+                    </h1>
+                    <div id="BMIGraph">
+    
+                    </div>
+                </div>
+            </div>
+            <h2 class="subHeading">History <button id="clearData" class="clearData">Clear All</button></h2>
+            <div id="history" class="history">
+                
+            </div>
+            <div class="inputContainer">
+                <button class="addNewWeightButton" id="addNewWeightButton">New Weight</button>
+            </div>
+        </div>
+    </main>
+
+    <div class="addWeightScreen" id="addWeightScreen">
+        <header class="addWeightScreenHeader">
+                <p class="addWeightScreenHeaderText">New Weight</p>
+                <button class="closeWeightScreenButton" id="closeWeightScreenButton">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26 2L2 26M2 2L26 26" stroke="#1AFFD5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>    
+                </button>
+        </header>
+        <div class="calendarSection">
+            <input type="date" class="dateInput" id="dateInput">
+        </div>
+        <div class="weightInputSection">
+            <input type="number" class="weightInput" id="weightInput">
+        </div>
+            
+        <button class="submitButton" id="submitButton">Save</button>
+    </div>
+
+    <script src="node_modules/d3/dist/d3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

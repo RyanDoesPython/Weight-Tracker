@@ -1,0 +1,82 @@
+.history{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12vh;
+}
+.entryElement{
+    width: 50vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #202137;
+    margin-bottom: 2vh;
+}
+.clearData{
+   margin-left: 40vw;
+   color: #1affd5;
+   background-color:transparent;
+   border: none;
+   font-size: 1rem;
+   text-decoration: underline;
+}
+.clearData:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+/* elements */
+.leftSection{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.daysSinceText{
+    color: #717171;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 6px;
+    width: 32vw;
+}
+.weightChangeGood{
+    display: flex;
+    align-items: center;
+    color: rgba(26, 255, 213, 1);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.weightChangeBad{
+    display: flex;
+    align-items: center;
+    color: #EA4A5E;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.arrow-up{
+    stroke: #EA4A5E;
+}
+.arrow-down{
+    stroke: #1affd5;
+    transform: rotate(180deg);
+    transform-origin: center;
+}
+
+/* Right Section */
+.rightSection{
+    display: flex;
+    margin-left: 9vw;
+    align-items: center;
+}
+.weightText{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 1vw;
+}
+.weightNumber{
+    font-size: 2rem;
+}
+.options{
+    background-color: transparent;
+    border: none;
+}

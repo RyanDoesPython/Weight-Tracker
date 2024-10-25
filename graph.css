@@ -1,0 +1,18 @@
+.axis {
+    color: rgba(131, 132, 144, 1);
+    stroke-dasharray: 5, 5;
+    stroke-width: 3;
+}
+
+.axis text {
+    fill: rgba(131, 132, 144, 1);
+    font-size: 12px;
+}
+
+.axis line {
+    opacity: 0;
+}
+
+.point {
+    fill: rgba(26, 255, 213, 1);
+}

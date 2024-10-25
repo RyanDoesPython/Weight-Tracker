@@ -1,0 +1,61 @@
+.BMIcalculatorContainer{
+    height : 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 8vh;
+}
+.subHeading{
+    color: rgba(131, 132, 144, 1);
+    margin-top: 6vh;
+    margin-bottom: 1.5vh;
+    margin-left: 5vw;
+    align-self: flex-start;
+    padding-top: 4vh;
+}
+.BMIcalculator{
+    background-color: rgba(32, 33, 55, 1);
+    border-radius: 8px;
+    height: 25vh;
+    width: 85%;
+}
+.BMIHeader{
+    margin-left: 15px;
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    height: 5vh;
+}
+.BMINumber{
+    color: white;
+    font-size: 2rem;
+}
+.BMIText{
+    color: rgba(26, 232, 202, 1);
+    font-size: 1.5rem;
+}
+
+
+/* Graph */
+.BMIxAxis{
+    fill: transparent;
+} 
+
+.BMIxAxis path{
+    stroke: transparent;
+}
+.BMIxAxis text{
+    fill: rgba(131, 132, 144, 1);
+    font-size: 1rem;
+    font-weight: bold;
+}
+.BMIxAxis line{
+    display: none
+}
+.BMISvg{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+}

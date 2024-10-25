@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: #16172E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+#mainSection{
+    display: block;
+}
+.addWeightScreen{
+    display: none;
+}
+.header{
+    height: 8vh;
+    margin: 0;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.welcomeBackText{
+    margin-left: 270px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.userButton{
+    width: 40px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: none;
+}
+.userButton:hover {
+    filter: brightness(0.8); /* Darker on hover */
+  }
+
+.button{
+    margin-left: 3vw;
+}
+.graph, .header, .tweanSection{
+    width: 60vw;
+    border-right: rgba(32, 33, 55, 1) 8px solid;
+    border-left: rgba(32, 33, 55, 1) 8px solid;
+    
+}
+.graph{
+    height: 32vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.tweanSection{
+    height: 5vh;
+}
+.inputContainer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    bottom: 20px;
+    margin: 0;
+}
+.addNewWeightButton{
+    width: 12vw;
+    height: 6vh;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(26, 255, 213, 1);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.addNewWeightButton:hover{
+    background-color: rgba(26, 255, 213, 1);
+    background-color: rgba(20, 240, 205, 1);
+}
+.scrollSection{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 55vh;
+    width: 60vw;
+    border-right: rgba(32, 33, 55, 1) 8px solid;
+    border-left: rgba(32, 33, 55, 1) 8px solid;
+}
